@@ -226,7 +226,7 @@ top: 150px;
 
 }
 .filter-container h2{
-margin-bottom: 20px;
+padding-bottom: 20px;
 font-family: 'Roboto', sans-serif;
 font-weight: bold;
 }
@@ -245,6 +245,7 @@ color: #9b8479;
 border-color: #ebebeb;
 border-style: solid;
 padding: 10px;
+flex-grow: 1;
 }
 
 .filters2 button {
@@ -253,4 +254,23 @@ font-size: 1rem;
 border: none;
 background-color: white;
 color: #9b8479;
+}
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    h1 {
+        font-size: 4rem;
+    }
+    /* FILTERS CONTAINER */
+    .filter-container {
+    position: sticky;
+    top: 180px;
+    margin-top: 60px;
+    }
+    .filters2 button {
+        font-size: 0.8rem;
+    }
+    .filters1 button {
+        font-size: 0.8rem;
+        padding: 5px;
+        flex-grow: 1;
+    }
 }
